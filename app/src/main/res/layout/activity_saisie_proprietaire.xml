@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SaisieVehicule">
-
+    tools:context=".SaisieProprietaire">
     <Button
-        android:id="@+id/backbutton"
+        android:id="@+id/backbutton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
@@ -18,11 +17,11 @@
         app:layout_constraintTop_toBottomOf="@+id/LayoutIVehicule" />
 
     <TextView
-        android:id="@+id/textSaisieVehicule"
+        android:id="@+id/textSaisieProprietaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Saisie des Véhicules"
+        android:text=" Saisie Propriétaire"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/LayoutIVehicule"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,17 +40,17 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Matriculation"
+                android:id="@+id/identifiant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Matriculation" />
+                android:text="Identifiant" />
 
 
             <EditText
-                android:id="@+id/textMatriculation"
+                android:id="@+id/textIdentifiant"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp" />
@@ -62,15 +61,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Marque"
+                android:id="@+id/nom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Marque" />
+                android:text="Nom" />
 
             <EditText
-                android:id="@+id/textMarque"
+                android:id="@+id/textNom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -80,15 +79,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Modele"
+                android:id="@+id/prenom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Modèle" />
+                android:text="Prénom" />
 
             <EditText
-                android:id="@+id/textModele"
+                android:id="@+id/textPrenom"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -98,93 +97,59 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Couleur"
+                android:id="@+id/email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Couleur" />
+                android:text="Email" />
 
             <EditText
-                android:id="@+id/textCouleur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Puissance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Puissance" />
-
-            <EditText
-                android:id="@+id/textPuissance"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Categorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Catégorie" />
-
-            <EditText
-                android:id="@+id/textCategorie"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Boite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Boite Vitesse" />
-
-            <EditText
-                android:id="@+id/textBoite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Annee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Année" />
-
-            <EditText
-                android:id="@+id/editTextAnnee"
+                android:id="@+id/editTextTextEmailAddress2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="date" />
+                android:inputType="textEmailAddress" />
 
         </TableRow>
-    </TableLayout>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/telephone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Téléphone" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="phone" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/adresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Adresse" />
+
+            <EditText
+                android:id="@+id/textAdresse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

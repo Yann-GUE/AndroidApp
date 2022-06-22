@@ -9,8 +9,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 public class User extends AppCompatActivity {
-    Button button7;
-    Button button4;
+    Button Button_Deco;
+    Button Button_Vehicule;
+    Button Button_Intervention;
+    Button Button_Proprietaire;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +22,8 @@ public class User extends AppCompatActivity {
     }
 
     void User() {
-        button7 = (Button) findViewById(R.id.button7);
-
-        button7.setOnClickListener(new View.OnClickListener() {
+        Button_Deco = (Button) findViewById(R.id.Button_Deco);
+        Button_Deco.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(User.this, Login.class);
@@ -30,15 +31,31 @@ public class User extends AppCompatActivity {
             }
         });
 
-        button4 = (Button) findViewById(R.id.button4);
-
-        button4.setOnClickListener(new View.OnClickListener() {
+        Button_Vehicule = (Button) findViewById(R.id.Button_Vehicule);
+        Button_Vehicule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(User.this, SaisieVehicule.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(User.this, SaisieVehicule.class);
+                startActivity(intent1);
+            }
+        });
+
+        Button_Intervention = (Button) findViewById(R.id.Button_Intervention);
+        Button_Intervention.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(User.this, SaisieIntervention.class);
+                startActivity(intent2);
+            }
+        });
+
+        Button_Proprietaire = (Button) findViewById(R.id.Button_Proprietaire);
+        Button_Proprietaire.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(User.this, SaisieProprietaire.class);
+                startActivity(intent3);
             }
         });
     }
-
 }

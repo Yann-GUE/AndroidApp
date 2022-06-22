@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SaisieVehicule">
+    tools:context=".SaisieIntervention">
 
     <Button
-        android:id="@+id/backbutton"
+        android:id="@+id/backbutton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
@@ -15,43 +15,40 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LayoutIVehicule" />
+        app:layout_constraintTop_toBottomOf="@+id/LayoutIntervention" />
 
     <TextView
-        android:id="@+id/textSaisieVehicule"
+        android:id="@+id/textSaisieIntervention"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Saisie des Véhicules"
+        android:text="Saisie des interventions"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/LayoutIVehicule"
+        app:layout_constraintBottom_toTopOf="@+id/LayoutIntervention"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TableLayout
-        android:id="@+id/LayoutIVehicule"
+        android:id="@+id/LayoutIntervention"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp">
+        android:layout_height="match_parent">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Matriculation"
+                android:id="@+id/description"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Matriculation" />
-
+                android:text="Description" />
 
             <EditText
-                android:id="@+id/textMatriculation"
+                android:id="@+id/textDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp" />
@@ -62,15 +59,16 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Marque"
+                android:id="@+id/numero"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Marque" />
+                android:text="Numéro" />
+
 
             <EditText
-                android:id="@+id/textMarque"
+                android:id="@+id/textNumero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -80,15 +78,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Modele"
+                android:id="@+id/Nintervention"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Modèle" />
+                android:text="Date intervention" />
 
             <EditText
-                android:id="@+id/textModele"
+                android:id="@+id/textIntervention"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -98,15 +96,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Couleur"
+                android:id="@+id/intervention"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Couleur" />
+                android:text="Durée intervention" />
 
             <EditText
-                android:id="@+id/textCouleur"
+                android:id="@+id/textDIntervention"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -116,15 +114,15 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Puissance"
+                android:id="@+id/typepanne"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Puissance" />
+                android:text="Type Panne" />
 
             <EditText
-                android:id="@+id/textPuissance"
+                android:id="@+id/textPanne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </TableRow>
@@ -134,56 +132,17 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/Categorie"
+                android:id="@+id/responsable"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="48dp"
                 android:layout_marginLeft="50dp"
                 android:layout_marginRight="50dp"
-                android:text="Catégorie" />
+                android:text="Responsable" />
 
             <EditText
-                android:id="@+id/textCategorie"
+                android:id="@+id/textResponsable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Boite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Boite Vitesse" />
-
-            <EditText
-                android:id="@+id/textBoite"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/Annee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:text="Année" />
-
-            <EditText
-                android:id="@+id/editTextAnnee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date" />
-
         </TableRow>
     </TableLayout>
 
