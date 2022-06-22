@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Fenêtre d'authentification"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login"
+        android:layout_alignStart="@+id/tv_login"
+        android:layout_alignLeft="@+id/tv_login"
+        android:layout_marginTop="80dp"
+        android:fontFamily="monospace"
+        android:text="Nom d'utilisateur"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_username"
+        android:layout_alignLeft="@+id/tv_username"
+        android:ems="17" />
+
+
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_username"
+        android:layout_alignStart="@+id/et_username"
+        android:layout_below="@+id/et_username"
+        android:layout_marginTop="33dp"
+        android:fontFamily="monospace"
+        android:text="Mot de passe"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="17"
+        android:layout_below="@+id/tv_password"
+        android:layout_alignLeft="@+id/tv_password" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_password"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:text="CONNEXION" />
+
+    <Button
+        android:id="@+id/btn_leave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:ems="12"
+        android:text="QUITTER" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/_2100949_19440299"
+        android:layout_below="@+id/btn_leave"/>
+
+</RelativeLayout>
