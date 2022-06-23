@@ -14,6 +14,9 @@ public class User extends AppCompatActivity {
     Button Button_Vehicule;
     Button Button_Intervention;
     Button Button_Proprietaire;
+    Button buttonInfoVehicule;
+    Button buttonInfoProprietaire;
+    Button buttonInfoIntervention;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,14 @@ public class User extends AppCompatActivity {
         Button_Proprietaire.setOnClickListener(ProprietaireListener);
         Button_Deco = (Button) findViewById(R.id.Button_Deco);
         Button_Deco.setOnClickListener(DecoListener);
+        buttonInfoVehicule = (Button) findViewById(R.id.buttonInfoVehicule);
+        buttonInfoVehicule.setOnClickListener(InfoVehiculeListener);
+        buttonInfoProprietaire = (Button) findViewById(R.id.buttonInfoProprietaire);
+        buttonInfoProprietaire.setOnClickListener(InfoProprietaireListener);
+        buttonInfoProprietaire = (Button) findViewById(R.id.buttonInfoProprietaire);
+        buttonInfoProprietaire.setOnClickListener(InfoProprietaireListener);
+        buttonInfoIntervention = (Button) findViewById(R.id.buttonInfoIntervention);
+        buttonInfoIntervention.setOnClickListener(InfoInterventionListener);
 
     }
 
@@ -61,6 +72,30 @@ public class User extends AppCompatActivity {
         public void onClick(View v) {
             Intent intent4 = new Intent(User.this, Login.class);
             startActivity(intent4);
+        }
+    };
+    private View.OnClickListener InfoVehiculeListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            Intent intent5 = new Intent(User.this, InfoVehicule.class);
+            startActivity(intent5);
+        }
+    };
+    private View.OnClickListener InfoProprietaireListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            Intent intent6 = new Intent(User.this, InfoProprietaire.class);
+            startActivity(intent6);
+        }
+    };
+    private View.OnClickListener InfoInterventionListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            Intent intent6 = new Intent(User.this, InfoIntervention.class);
+            startActivity(intent6);
         }
     };
 

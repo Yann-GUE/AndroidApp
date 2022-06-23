@@ -7,6 +7,8 @@
 
     <TextView
         android:id="@+id/textView"
+        android:background="#FB0000"
+        android:textColor="#FFFFFF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Menu Principal"
@@ -53,7 +55,7 @@
                 android:text="SAISIE VEHICULES" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonInfoVehicule"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -79,7 +81,7 @@
                 android:text="SAISIE INTERVENTION" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonInfoIntervention"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
@@ -105,7 +107,7 @@
                 android:text="SAISIE PROPRIETAIRE" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/buttonInfoProprietaire"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
