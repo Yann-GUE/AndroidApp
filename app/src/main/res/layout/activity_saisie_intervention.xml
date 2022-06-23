@@ -49,9 +49,10 @@
 
             <EditText
                 android:id="@+id/textDescription"
-                android:layout_width="wrap_content"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="50dp"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -70,7 +71,8 @@
             <EditText
                 android:id="@+id/textNumero"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -88,7 +90,8 @@
             <EditText
                 android:id="@+id/textIntervention"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -106,7 +109,8 @@
             <EditText
                 android:id="@+id/textDIntervention"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -124,7 +128,8 @@
             <EditText
                 android:id="@+id/textPanne"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
 
         <TableRow
@@ -142,7 +147,8 @@
             <EditText
                 android:id="@+id/textResponsable"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </TableRow>
     </TableLayout>
 

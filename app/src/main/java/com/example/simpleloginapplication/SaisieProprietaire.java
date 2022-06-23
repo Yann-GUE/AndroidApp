@@ -14,7 +14,7 @@ public class SaisieProprietaire extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie_proprietaire);
-        SaisieProprietaire();
+        //SaisieProprietaire();
     }
 
     void SaisieProprietaire(){

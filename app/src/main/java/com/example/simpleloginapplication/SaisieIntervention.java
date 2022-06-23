@@ -14,11 +14,10 @@ public class SaisieIntervention extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie_intervention);
-        SaisieIntervention();
+        //SaisieIntervention();
     }
 
-    void SaisieIntervention(){
-        backbutton2 = (Button) findViewById(R.id.backbutton);
+    void SaisieIntervention() {
 
         backbutton2.setOnClickListener(new View.OnClickListener() {
             @Override
