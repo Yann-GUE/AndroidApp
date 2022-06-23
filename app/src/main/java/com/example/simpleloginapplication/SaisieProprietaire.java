@@ -14,18 +14,15 @@ public class SaisieProprietaire extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie_proprietaire);
-        //SaisieProprietaire();
+        backbutton3 = (Button) findViewById(R.id.backbutton3);
+        backbutton3.setOnClickListener(Back3Listener);
     }
+    private View.OnClickListener Back3Listener = new View.OnClickListener() {
 
-    void SaisieProprietaire(){
-        backbutton3 = (Button) findViewById(R.id.backbutton);
-
-        backbutton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SaisieProprietaire.this, User.class);
-                startActivity(intent);
-            }
-        });
+    @Override
+    public void onClick(View v) {
+        Intent intent7 = new Intent(SaisieProprietaire.this, User.class);
+        startActivity(intent7);
     }
+};
 }

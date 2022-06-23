@@ -14,18 +14,15 @@ public class SaisieVehicule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saisie_vehicule);
-        SaisieVehicule();
-    }
-
-    void SaisieVehicule(){
         backbutton = (Button) findViewById(R.id.backbutton);
-
-        backbutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SaisieVehicule.this, User.class);
-                startActivity(intent);
-            }
-        });
+        backbutton.setOnClickListener(BackListener);
     }
+    private View.OnClickListener BackListener = new View.OnClickListener() {
+
+        @Override
+        public void onClick(View v) {
+            Intent intent5 = new Intent(SaisieVehicule.this, User.class);
+            startActivity(intent5);
+        }
+    };
 }
